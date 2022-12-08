@@ -10,9 +10,9 @@ const ItemDetail = ({product}) => {
             <div className="row">
                 <div className="col">
                     <img className="w-50" src={product.foto} alt='foto producto' />
-                    <h3>nombre: {product.name}</h3>
-                    <h3>categoria: {product.categoria}</h3>
-                    <h4>precio: {product.price}</h4>
+                    <h3>Producto: {product.name}</h3>
+                    <h3>Categoría: {product.categoria}</h3>
+                    <h4>Precio U$D: {product.price}</h4>
                 </div>
                 <div className="col">
                     <ItemCount 
