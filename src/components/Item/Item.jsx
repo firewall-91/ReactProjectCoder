@@ -10,11 +10,11 @@ const Item = ({ product }) => {
             
             <div className="card w-100 mt-5" >
                 <div className="card-header">
-                    {`${product.name} - ${product.categoria}`}
+                    {`${product.name}`}
                 </div>
                 <div className="card-body">
                     <img src={product.foto} alt='' className='w-50' />
-                    {product.price}                                                            
+                   <h3>U$D {product.price}  </h3>                                                           
                 </div>
         
                 <div className="card-footer"> 
