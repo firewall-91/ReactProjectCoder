@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-
+import { Link, NavLink } from 'react-router-dom'
+import { Cartwidget } from '../Cartwidget/Cartwidget'
 // import 
 const NavBar = ({ componente }) => {
   // console.log(children)
@@ -7,12 +8,13 @@ const NavBar = ({ componente }) => {
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <Navbar.Brand href="#home">La Cuerda</Navbar.Brand>
+          <NavLink className={({isActive})=> isActive ? 'btn btn-primary': 'btn btn-outline-primary' } to="/">La Cuerda</NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-              <Nav.Link href="#cuerdas">Cuerdas</Nav.Link>
-              <Nav.Link href="#percusion">Percusión</Nav.Link>
+              <NavLink className='nav-link active' to="/category/Cuerdas">Cuerdas</NavLink>
+              <NavLink className='nav-link active' to="/category/Percusion">Percusión</NavLink>
+
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
@@ -26,7 +28,9 @@ const NavBar = ({ componente }) => {
               </NavDropdown> */}
               </Nav>
               <Nav>
-              <Nav.Link href="#cart">Carrito</Nav.Link>
+              <NavLink className='btn btn-outline-primary' to='/cart'>
+                  <Cartwidget />
+                </NavLink>
               <Nav.Link href="#login">LogIn</Nav.Link>
               </Nav>
           </Navbar.Collapse>
