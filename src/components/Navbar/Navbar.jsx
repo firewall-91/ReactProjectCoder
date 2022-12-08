@@ -1,4 +1,48 @@
-import React from 'react'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+
+// import 
+const NavBar = ({ componente }) => {
+  // console.log(children)
+  return (
+    <>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container>
+          <Navbar.Brand href="#home">La Cuerda</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+              <Nav.Link href="#cuerdas">Cuerdas</Nav.Link>
+              <Nav.Link href="#percusion">Percusión</Nav.Link>
+              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                  Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                  Separated link
+                  </NavDropdown.Item>
+              </NavDropdown> */}
+              </Nav>
+              <Nav>
+              <Nav.Link href="#cart">Carrito</Nav.Link>
+              <Nav.Link href="#login">LogIn</Nav.Link>
+              </Nav>
+          </Navbar.Collapse>
+          </Container>
+          
+        
+      </Navbar>
+    </>
+  )
+}
+
+export default NavBar
+
+
+
+/* import React from 'react'
 
 function Navbar() {
   return (
@@ -18,10 +62,10 @@ function Navbar() {
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
+            Instrumentos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Guitarras</a></li>
+            <li><a class="dropdown-item" href="#">Cuerdas</a></li>
             <li><a class="dropdown-item" href="#">Percusión</a></li>
             <li><hr class="dropdown-divider"/></li>
             <li><a class="dropdown-item" href="#">Accesorios</a></li>
@@ -42,4 +86,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar */
