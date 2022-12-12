@@ -46,27 +46,23 @@
 
 ## :dart: About ##
 
-Describe your project
+Pre-entrega del Proyecto final - React JS | Fullstack | Coderhouse 2022
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Navbar con cart;\
+:heavy_check_mark: Catálogo;\
+:heavy_check_mark: Detalle de producto;
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+React Router Dom
 
 ## :checkered_flag: Starting ##
 
@@ -91,7 +87,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/{{firewall-91}}" target="_blank">{{Kevin Daliés}}</a>
 
 &#xa0;
 
