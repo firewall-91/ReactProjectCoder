@@ -1,31 +1,18 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/NavBar/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import ItemListContainer from './containers/ItemListContainer/ItemListContainer'
-import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer'
-import CartContainer from './containers/CartContainer/CartContainer'
+import React from "react";
+import CartProvider from "./Context/CartContext";
+import AppRoutes from "./Routes/AppRoutes";
 
-function App() {
 
+
+export default function App() {
   return (
+    <>
+    <CartProvider>
     
-    <BrowserRouter>
-      <Navbar/>
-      <Routes >
-        <Route path='/' element={ <ItemListContainer /> } />
-        <Route path='/category/:id' element={ <ItemListContainer /> } />
-        <Route path='/detail/:productId' element={<ItemDetailContainer /> } />
-        <Route path='/cart' element={ <CartContainer /> } />
-        <Route path='*' element={<Navigate to='/' />}/>
-      </Routes> 
-      
-      {/* <ItemListContainer/> */}
-      <Footer/>
-    </BrowserRouter>
-    
-  )
-}
+      <AppRoutes/>
 
-export default App
+    </CartProvider>
+    
+    </>
+  );
+}
