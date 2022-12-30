@@ -7,7 +7,5 @@ const Home = () => {
             <ItemListContainer />
         </main>
     )
-
-
 };
 export default Home;

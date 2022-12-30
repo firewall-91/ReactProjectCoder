@@ -5,3 +5,7 @@
     min-height: calc(100vh - 272px);
   }
 
+.formulario {
+  text-align: center;
+  align-items: center;
+}

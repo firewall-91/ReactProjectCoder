@@ -44,7 +44,7 @@ const CartForm = () => {
       presentToast('Uno o más campos están vacíos');
       return;
     } else if (!isEmail(email)) {
-      presentToast('El email no es válido');
+      presentToast('Dirección de correo invalida');
       return;
     }
 
@@ -100,15 +100,15 @@ const CartForm = () => {
         </>
       ) : (
         <form
-          className="flex flex-col items-center p-2"
+          className="flex flex-col items-center p-2 formulario"
           onSubmit={handleSubmit}
         >
-          <h2 className="text-2xl p-8 capitalize">
+          <h2 className="text-2xl p-8">
             Ingresa tus datos para terminar la compra
           </h2>
           <div className="">
             <label className="text-lg" htmlFor="">
-              First Name:{' '}
+              Nombre:{' '}
             </label>
             <input
               className="rounded-md border-2 p-1 border-gray-500 m-2"
@@ -120,7 +120,7 @@ const CartForm = () => {
           </div>
           <div className="form__group">
             <label className="text-lg" htmlFor="">
-              Last Name:{' '}
+              Apellido:{' '}
             </label>
             <input
               className="rounded-md border-2 p-1 border-gray-500 m-2"
@@ -132,7 +132,7 @@ const CartForm = () => {
           </div>
           <div className="form__group">
             <label className="text-lg" htmlFor="">
-              Email:{' '}
+              E-mail:{' '}
             </label>
             <input
               className="rounded-md border-2 p-1 border-gray-500 m-2"
@@ -145,7 +145,7 @@ const CartForm = () => {
 
           <button
             type="submit"
-            className="p-2 rounded-md border-solid border-2 m-8 font-semibold bg-violet-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700"
+            className="p-2 rounded-md border-solid border-2 m-8 font-semibold bg-red-300 hover:bg-black hover:text-white border-black hover:scale-90 duration-700"
           >
             Finalizar compra
           </button>

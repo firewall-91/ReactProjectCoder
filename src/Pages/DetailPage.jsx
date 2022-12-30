@@ -7,13 +7,7 @@ const DetailPage = () => {
     return (
         <main className="h-min-main ">
             <ItemDetailContainer product={product} />
-           
-
         </main>
-
     );
-
-
-
 };
 export default DetailPage;
