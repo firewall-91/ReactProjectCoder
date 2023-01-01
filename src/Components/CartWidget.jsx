@@ -15,10 +15,10 @@ const CardWitget = () => {
       onClick={() => {
         navigate('/cart');
       }}
-      className="cart-widget flex flex-row p-2 gap-1 disabled:opacity-80 text-white disabled:text-gray-500"
+      className="cart-widget flex flex-row p-2 gap-1 text-black "
     >
       <FaCartPlus size="2rem" />
-      <span className="text-white text-lg">
+      <span className="text-black text-lg">
         {cart.length > 0 ? getTotalItems(cart) : null}
       </span>
     </button>
